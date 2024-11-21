@@ -1,17 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import logo from '../assets/blueTown.png'
 
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-white shadow">
       {/* Logo */}
-      <div className="text-5xl font-bold">
+      <div className="">
         <Link to="/" className="no-underline">
-          <span className="text-black">Work</span>
-          <span className="text-[#6C6EF5]">Track</span>
+         <div className="text-black text-5xl font-bold">Work<span className="text-[#6C6EF5]">Track</span></div>
+         <div>
+         <span className="text-black ml-20">Simplifying field work</span>
+         </div>
         </Link>
       </div>
-
+      
       {/* Navigation Links */}
       <div className="hidden md:flex space-x-12">
         <Link
