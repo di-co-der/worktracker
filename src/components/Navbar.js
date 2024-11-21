@@ -1,92 +1,51 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className="bg-gray-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-indigo-400">
-              MyBrand
-            </Link>
-          </div>
-          <div className="hidden md:flex space-x-4">
-            <Link to="/" className="hover:text-indigo-400">
-              Home
-            </Link>
-            <Link to="/about" className="hover:text-indigo-400">
-              About
-            </Link>
-            <Link to="/services" className="hover:text-indigo-400">
-              Services
-            </Link>
-            <Link to="/contact" className="hover:text-indigo-400">
-              Contact
-            </Link>
-          </div>
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="focus:outline-none"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                )}
-              </svg>
-            </button>
-          </div>
-        </div>
+    <nav className="flex justify-between items-center px-6 py-4 bg-white shadow">
+      {/* Logo */}
+      <div className="text-5xl font-bold">
+        <Link to="/" className="no-underline">
+          <span className="text-black">Work</span>
+          <span className="text-[#6C6EF5]">Track</span>
+        </Link>
       </div>
-      {isOpen && (
-        <div className="md:hidden">
-          <Link
-            to="/"
-            className="block px-4 py-2 hover:bg-gray-700 hover:text-indigo-400"
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="block px-4 py-2 hover:bg-gray-700 hover:text-indigo-400"
-          >
-            About
-          </Link>
-          <Link
-            to="/services"
-            className="block px-4 py-2 hover:bg-gray-700 hover:text-indigo-400"
-          >
-            Services
-          </Link>
-          <Link
-            to="/contact"
-            className="block px-4 py-2 hover:bg-gray-700 hover:text-indigo-400"
-          >
-            Contact
-          </Link>
-        </div>
-      )}
+
+      {/* Navigation Links */}
+      <div className="hidden md:flex space-x-12">
+        <Link
+          to="/"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
+          About Us
+        </Link>
+        <Link
+          to="/contact"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
+          Contact
+        </Link>
+        <Link
+          to="/login"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
+          Login
+        </Link>
+      </div>
+
+      {/* Sign Up Button */}
+      <Link to="/signup">
+        <button className="bg-blue-500 text-white text-lg px-4 py-2 rounded-lg hover:bg-blue-600">
+          Sign Up
+        </button>
+      </Link>
     </nav>
   );
 };
