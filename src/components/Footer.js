@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8">
+    <footer className="bg-gray-900 text-gray-300 py-8 px-4">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {/* Brand Section */}
         <div>
