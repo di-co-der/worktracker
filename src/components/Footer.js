@@ -1,5 +1,10 @@
 import React from "react";
-import"@fortawesome/fontawesome-free/css/all.min.css";
+import {
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faGoogle,
+} from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-8">
