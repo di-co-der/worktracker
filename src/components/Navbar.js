@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
   return (
-    <nav className="flex justify-between items-center px-6 py-2 bg-white shadow border-b-2 bg-gradient-to-b from-white to-[#d2ddfc]">
+    <nav className="fixed w-full flex justify-between items-center px-6 py-2 bg-white shadow border-b-2 bg-gradient-to-b from-white to-[#d2ddfc]">
     {/* Logo */}
     <div className="">
       <a href="/#home" className="no-underline">

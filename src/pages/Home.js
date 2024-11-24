@@ -1,7 +1,6 @@
 // src/pages/Home.js
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
 import image from "../assets/landingPageImg.png";
 import image2 from "../assets/about-us.jpg";
 import image4 from "../assets/contactus_page-removebg-preview.png";
@@ -13,7 +12,6 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
       {/* Hero Section */}
       <section
         id="home"
@@ -89,9 +87,9 @@ const Home = () => {
       {/* Contact Us Section */}
       <section
         id="contact"
-        className="h-full w-full bg-white flex pt-16 border-b-2"
+        className="h-full w-full bg-white flex pt-16 border-b-2 bg-gradient-to-b from-white to-[#d2ddfc]"
       >
-        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center ">
+        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center bg-gradient-to-b from-white to-[#d2ddfc]">
           {/* Contact Form */}
           <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">

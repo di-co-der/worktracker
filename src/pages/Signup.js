@@ -1,16 +1,14 @@
 import React from "react";
 import loginImg from "../assets/login_image-removebg-preview.png";
-import Navbar from "../components/Navbar";
 
 const Signup = () => {
   return (
     <div>
-      <Navbar />
       <section
         id="signup"
         className="h-full w-full bg-white flex pt-16 bg-gradient-to-b from-white to-[#d2ddfc]"
       >
-        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center pb-24 bg-gradient-to-b from-white to-[#d2ddfc]">
+        <div className="h-full mt-24 w-6/12 bg-white flex flex-col items-center justify-center pb-24 bg-gradient-to-b from-white to-[#d2ddfc]">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Create Your Account
           </h1>
